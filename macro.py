@@ -57,7 +57,7 @@ def get_absolute_url(base, url):
         return ujoin(base, 'raw-attachment/ticket', path)
     
     if scheme in ('wiki',):
-        return ujoin(base, 'raw-attachment/wiki', path)
+        return ujoin(base, 'raw-attachment/wiki', netloc, path)
     
     return url
 
